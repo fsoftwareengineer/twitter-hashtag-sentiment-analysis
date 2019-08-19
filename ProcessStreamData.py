@@ -5,8 +5,8 @@ import json
 import boto3
 
 print('Loading function')
-
-comprehend = boto3.client(service_name='comprehend', region_name='us-east-2')
+__region__ = '<REGION>'
+comprehend = boto3.client(service_name='comprehend', region_name=__region__)
 
 
 def lambda_handler(event, context):
